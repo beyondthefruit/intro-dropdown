@@ -113,6 +113,7 @@ header {
 
 .menus {
   text-decoration: none;
+  background-color: cadetblue;
   /* margin: 0; */
   /* padding: 00.5rem; */
 }
@@ -120,6 +121,12 @@ header {
   padding: 0 0.5rem;
   text-align: center;
   display: inline-block;
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  background-color: burlywood;
 }
 
 /* main design */

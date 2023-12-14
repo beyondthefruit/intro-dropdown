@@ -10,10 +10,22 @@ const NavMenu = () => {
       <nav className='nav-center'>
         <ul className='menus'>
           {links.map((link) => {
-            const { id, url, text } = link;
+            const { id, url, text, sublinks } = link;
             return (
               <li key={id} className='lili'>
-                {text}
+                {sublinks ? (
+                  <>
+                    <a href={url}>{text}</a>
+                    <ul className='dropdown'>
+                      {sublinks.map((sublink) => {
+                        const { id, url, text } = sublink;
+                        return <a href={url}>{text}</a>;
+                      })}
+                    </ul>
+                  </>
+                ) : (
+                  <a href={url}>{text}</a>
+                )}
               </li>
             );
           })}
