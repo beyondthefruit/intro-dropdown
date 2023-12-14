@@ -1,13 +1,14 @@
-import './App.css';
 import NavMenu from './Components/nav';
 import Main from './Components/main';
 
 function App() {
   return (
-    <>
-      <NavMenu />
-      <Main />
-    </>
+    <div className='app'>
+      <div className='container'>
+        <NavMenu />
+        <Main />
+      </div>
+    </div>
   );
 }
 

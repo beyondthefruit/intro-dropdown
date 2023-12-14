@@ -1,17 +1,24 @@
 import React from 'react';
 import Logo from '../assets/logo.svg';
+import { links } from '../data';
 const NavMenu = () => {
   return (
     <header>
       <div className='logo'>
         <img src={Logo} alt='snap' />
       </div>
-      <ul className='drop'>
-        <li className='lili'>Features </li>
-        <li className='lili'>Company </li>
-        <li className='lili'>Careers </li>
-        <li className='lili'>About</li>
-      </ul>
+      <nav className='nav-center'>
+        <ul className='menus'>
+          {links.map((link) => {
+            const { id, url, text } = link;
+            return (
+              <li key={id} className='lili'>
+                {text}
+              </li>
+            );
+          })}
+        </ul>
+      </nav>
 
       <p>Login Register</p>
     </header>
