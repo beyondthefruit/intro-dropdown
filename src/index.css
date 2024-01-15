@@ -101,7 +101,7 @@ header {
   display: flex;
 }
 .logo {
-  padding: 0.5rem;
+  padding: 2rem;
 }
 
 .nav-center {
@@ -123,10 +123,35 @@ header {
   display: inline-block;
 }
 
-.dropdown {
+.dropdown-Menu {
   display: flex;
-  flex-direction: column;
   background-color: burlywood;
+
+  width: 500px;
+  height: 100px;
+  position: relative;
+  left: 0;
+  border: 1px solid gray;
+  padding: 10px;
+  text-align: center;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.li {
+  display: block;
+}
+
+.li a {
+  display: block;
+}
+
+.show {
+  display: block;
 }
 
 /* main design */
