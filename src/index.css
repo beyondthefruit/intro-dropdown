@@ -1,3 +1,5 @@
+@import 'bootstrap';
+
 *,
 ::after,
 ::before {
@@ -92,7 +94,7 @@ code {
 .container {
   width: 90vw;
   height: 70vh;
-  background-color: aqua;
+  /* background-color: aqua; */
   margin: 0 auto;
 }
 
@@ -112,8 +114,8 @@ header {
 }
 
 .menus {
-  text-decoration: none;
-  background-color: cadetblue;
+  /* text-decoration: none; */
+  background-color: white;
   /* margin: 0; */
   /* padding: 00.5rem; */
 }
@@ -125,8 +127,6 @@ header {
 
 .dropdown-Menu {
   display: flex;
-  background-color: burlywood;
-
   width: 500px;
   height: 100px;
   position: relative;
@@ -145,14 +145,27 @@ ul {
 .li {
   display: block;
 }
+.btn {
+  color: black !important;
+  background-color: white !important;
+  border: none;
+}
+/* .btn:hover,
+.btn:after,
+.active {
+  background-color: white;
+  color: black;
+} */
 
 .li a {
   display: block;
 }
-
-.show {
-  display: block;
-}
+/* .nav-item {
+  color: black;
+  height: 24px;
+  padding: 6px 12px 6px;
+  vertical-align: middle;
+} */
 
 /* main design */
 article {
