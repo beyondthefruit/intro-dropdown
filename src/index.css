@@ -101,7 +101,19 @@ code {
 /* navbar design */
 header {
   display: flex;
+  width: 100%;
 }
+
+/* .navbar,
+.navbar-expand-lg {
+  background-color: white !important;
+} */
+/* nav,
+.navbar,
+.navbar-expand {
+  justify-content: flex-start !important;
+} */
+
 .logo {
   padding: 2rem;
 }
@@ -112,12 +124,19 @@ header {
   justify-content: space-between;
   padding: 0 1rem;
 }
+.center {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.center-right {
+  justify-content: flex-end;
+  justify-items: flex-end;
+  align-self: flex-end;
+}
 
 .menus {
-  /* text-decoration: none; */
   background-color: white;
-  /* margin: 0; */
-  /* padding: 00.5rem; */
 }
 .lili {
   padding: 0 0.5rem;
@@ -150,22 +169,18 @@ ul {
   background-color: white !important;
   border: none;
 }
-/* .btn:hover,
-.btn:after,
-.active {
-  background-color: white;
-  color: black;
-} */
 
 .li a {
   display: block;
 }
-/* .nav-item {
-  color: black;
-  height: 24px;
-  padding: 6px 12px 6px;
-  vertical-align: middle;
-} */
+.sign {
+  justify-items: flex-end;
+  align-self: flex-end;
+  /* margin-left: 5rem; */
+}
+.container-fluid {
+  width: 85vw;
+}
 
 /* main design */
 article {
