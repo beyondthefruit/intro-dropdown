@@ -7,12 +7,12 @@ const NavMenu = () => {
   return (
     <header>
       <nav className='navbar navbar-expand-lg bg-white-body-tertiary'>
+        <a className='navbar-brand' href='#'>
+          <img src={Logo} alt='snap' />
+        </a>
         <div className='container-fluid'>
-          <a className='navbar-brand' href='#'>
-            <img src={Logo} alt='snap' />
-          </a>
           <button
-            className='navbar-toggler'
+            className='navbar-toggler ms-auto'
             type='button'
             data-bs-toggle='collapse'
             data-bs-target='#navbarSupportedContent'
