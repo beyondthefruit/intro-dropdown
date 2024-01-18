@@ -187,14 +187,15 @@ ul {
   border: 0;
 }
 
-/* @media (max-width: 950px) {
+@media (max-width: 950px) {
   .navbar-collapse {
     position: absolute;
     width: 100%;
-    top: 100%;
+    height: 100%;
     background-color: white;
+    /* hhhd */
   }
-} */
+}
 
 /* main design */
 article {
